@@ -1,4 +1,5 @@
 from game2048.game_logic import *
+import wandb
 
 
 def basic_reward(game, action):
@@ -71,7 +72,15 @@ class Q_agent:
     parameter_shape = {2: (24, 256), 3: (52, 4096), 4: (17, 65536)}
 
     def __init__(self, weights=None, reward=basic_reward, step=0, alpha=0.2, decay=0.999,
-                 file=None, n=4):
+                 file=None, n=4, config = None):
+        self.config = config
+        if config:
+            n = config["features"]
+            reward_type = config["reward"]
+            if reward_type == "basic":
+                reward = basic_reward
+            elif reward_type == "log":
+                reward = log_reward
         self.R = reward
         self.step = step
         self.alpha = alpha
@@ -105,9 +114,16 @@ class Q_agent:
         return Q_agent.feature_functions[self.n](X)
 
     # numpy arrays have a nice "advanced slicing" trick, used in this function
-    def evaluate(self, state):
+    def evaluate(self, state: Game):
         features = self.features(state.row)
         return np.sum(self.weights[range(self.num_feat), features])
+
+    def mix_eval(self, state: Game):
+        if state.empty_count() > 6:
+            return self.evaluate(state)
+        else:
+            # return estimator_lf(depth=2, width=2, evaluator=self.evaluate)(state)
+            return estimator_lf(depth=3, width=4, evaluator=self.evaluate)(state)
 
     def update(self, state, dw):
         self.step += 1
@@ -154,7 +170,10 @@ class Q_agent:
                 test = game.copy()
                 change = test.move(direction)
                 if change:
-                    value = self.evaluate(test)
+                    if not self.config["tree-search"]:
+                        value = self.evaluate(test)
+                    else:
+                        value = self.mix_eval(test)
                     if value > best_value:
                         action, best_value = direction, value
             if state:
@@ -201,10 +220,19 @@ class Q_agent:
                 reached[max_tile - 10] += 1
             if i - start_ep > 100:
                 ma100 = ma100[1:]
-            print(i, game.odometer, game.score, 'reached', 1 << np.max(game.row), '100-ma=', int(np.mean(ma100)))
+            print('Eps:', i, ',No. Moves:', game.odometer, ',Score:', game.score,
+                    ',Max block:', 1 << np.max(game.row), ',100-ma=', int(np.mean(ma100)))
+            wandb.log({"No. Moves": game.odometer, "score": game.score,
+                        "max_block": 1 << np.max(game.row)})
+            wandb.log({"best score": best_score, '100-ma': int(np.mean(ma100))})
             if saving and i % 100 == 0:
                 agent.save_agent()
                 print(f'agent saved in {agent.file}')
+            for j in range(7):
+                r = sum(reached[j:]) / 10
+                wandb.log({f'{1 << (j + 10)}%': r})
+                # print(f'{1 << (j + 10)} reached in {r} %')
+            
             if i % 1000 == 0:
                 print('------')
                 print((time.time() - start) / 60, "min")
@@ -224,16 +252,24 @@ class Q_agent:
 
 if __name__ == "__main__":
 
-    num_eps = 100000
+    # num_eps = 100000
 
-    # Run the below line to see the magic. How it starts with random moves and immediately
-    # starts climbing the ladder
+    # # Run the below line to see the magic. How it starts with random moves and immediately
+    # # starts climbing the ladder
+    # agent = Q_agent(n=4, reward=basic_reward, alpha=0.1, file="new_agent.npy")
 
-    agent = Q_agent(n=4, reward=basic_reward, alpha=0.1, file="new_agent.npy")
+    # # Uncomment/comment the above line with the below if you continue training the same agent,
+    # # update agent.alpha and agent.decay if needed.
 
-    # Uncomment/comment the above line with the below if you continue training the same agent,
-    # update agent.alpha and agent.decay if needed.
+    # # agent = Q_agent.load_agent(file="best_agent.npy")
+    # Q_agent.train_run(num_eps, agent=agent, file="new_best_agent.npy", start_ep=0)
 
-    # agent = Q_agent.load_agent(file="best_agent.npy")
-
-    Q_agent.train_run(num_eps, agent=agent, file="new_best_agent.npy", start_ep=0)
+    with wandb.init() as run:
+        config = wandb.config
+        if not config["tree-search"]:
+            num_eps = 720
+        else:
+            num_eps = 720    
+    
+        agent = Q_agent(config = config, alpha=0.1, file="new_agent.npy")
+        Q_agent.train_run(num_eps, agent=agent, start_ep=0)

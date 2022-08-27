@@ -1,0 +1,270 @@
+/home/duken72/git/2048/game2048/game_logic.py:76: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  arr = np.array(self.history)
+new best game!
+2				4				8				4
+8				16				128				16
+16				512				64				8
+2				4				32				2
+ score = 5340 odometer = 367
+game saved at best_game.npy
+Eps: 1 ,No. Moves: 367 ,Score: 5340 ,Max block: 512 ,100-ma= 5340
+new best game!
+4				8				16				4
+8				32				64				32
+4				512				128				8
+2				32				16				4
+ score = 5552 odometer = 391
+game saved at best_game.npy
+Eps: 2 ,No. Moves: 391 ,Score: 5552 ,Max block: 512 ,100-ma= 5446
+new best game!
+4				8				4				2
+32				64				16				4
+4				8				512				256
+2				32				8				4
+ score = 6440 odometer = 443
+game saved at best_game.npy
+Eps: 3 ,No. Moves: 443 ,Score: 6440 ,Max block: 512 ,100-ma= 5777
+new best game!
+2				4				8				4
+256				1024				128				2
+16				8				32				4
+2				4				64				8
+ score = 12020 odometer = 702
+game saved at best_game.npy
+Eps: 4 ,No. Moves: 702 ,Score: 12020 ,Max block: 1024 ,100-ma= 7338
+Eps: 5 ,No. Moves: 302 ,Score: 3544 ,Max block: 256 ,100-ma= 6579
+Eps: 6 ,No. Moves: 451 ,Score: 6668 ,Max block: 512 ,100-ma= 6594
+Eps: 7 ,No. Moves: 276 ,Score: 3356 ,Max block: 256 ,100-ma= 6131
+Eps: 8 ,No. Moves: 284 ,Score: 3348 ,Max block: 256 ,100-ma= 5783
+Eps: 9 ,No. Moves: 380 ,Score: 5456 ,Max block: 512 ,100-ma= 5747
+new best game!
+16				256				4				8
+1024				32				16				4
+16				256				64				2
+2				8				4				32
+ score = 13280 odometer = 799
+game saved at best_game.npy
+Eps: 10 ,No. Moves: 799 ,Score: 13280 ,Max block: 1024 ,100-ma= 6500
+Eps: 11 ,No. Moves: 528 ,Score: 7640 ,Max block: 512 ,100-ma= 6604
+Eps: 12 ,No. Moves: 283 ,Score: 3452 ,Max block: 256 ,100-ma= 6341
+Eps: 13 ,No. Moves: 253 ,Score: 3072 ,Max block: 256 ,100-ma= 6089
+Eps: 14 ,No. Moves: 383 ,Score: 5452 ,Max block: 512 ,100-ma= 6044
+Eps: 15 ,No. Moves: 607 ,Score: 10448 ,Max block: 1024 ,100-ma= 6337
+Eps: 16 ,No. Moves: 263 ,Score: 3160 ,Max block: 256 ,100-ma= 6139
+Eps: 17 ,No. Moves: 437 ,Score: 6436 ,Max block: 512 ,100-ma= 6156
+Eps: 18 ,No. Moves: 296 ,Score: 3488 ,Max block: 256 ,100-ma= 6008
+Eps: 19 ,No. Moves: 257 ,Score: 3088 ,Max block: 256 ,100-ma= 5854
+Eps: 20 ,No. Moves: 717 ,Score: 12160 ,Max block: 1024 ,100-ma= 6170
+Eps: 21 ,No. Moves: 557 ,Score: 9728 ,Max block: 1024 ,100-ma= 6339
+Eps: 22 ,No. Moves: 517 ,Score: 7412 ,Max block: 512 ,100-ma= 6388
+Eps: 23 ,No. Moves: 492 ,Score: 7188 ,Max block: 512 ,100-ma= 6422
+Eps: 24 ,No. Moves: 721 ,Score: 12132 ,Max block: 1024 ,100-ma= 6660
+Eps: 25 ,No. Moves: 708 ,Score: 12048 ,Max block: 1024 ,100-ma= 6876
+Eps: 26 ,No. Moves: 752 ,Score: 12516 ,Max block: 1024 ,100-ma= 7093
+Eps: 27 ,No. Moves: 481 ,Score: 7032 ,Max block: 512 ,100-ma= 7090
+Eps: 28 ,No. Moves: 606 ,Score: 10420 ,Max block: 1024 ,100-ma= 7209
+new best game!
+4				32				16				2
+256				128				1024				8
+8				16				512				64
+4				8				4				2
+ score = 16108 odometer = 950
+game saved at best_game.npy
+Eps: 29 ,No. Moves: 950 ,Score: 16108 ,Max block: 1024 ,100-ma= 7516
+Eps: 30 ,No. Moves: 442 ,Score: 6404 ,Max block: 512 ,100-ma= 7479
+Eps: 31 ,No. Moves: 724 ,Score: 12176 ,Max block: 1024 ,100-ma= 7631
+Eps: 32 ,No. Moves: 475 ,Score: 6908 ,Max block: 512 ,100-ma= 7608
+Eps: 33 ,No. Moves: 542 ,Score: 7860 ,Max block: 512 ,100-ma= 7616
+Eps: 34 ,No. Moves: 899 ,Score: 15420 ,Max block: 1024 ,100-ma= 7845
+Eps: 35 ,No. Moves: 488 ,Score: 7108 ,Max block: 512 ,100-ma= 7824
+Eps: 36 ,No. Moves: 214 ,Score: 2528 ,Max block: 256 ,100-ma= 7677
+Eps: 37 ,No. Moves: 717 ,Score: 12036 ,Max block: 1024 ,100-ma= 7795
+Eps: 38 ,No. Moves: 381 ,Score: 5444 ,Max block: 512 ,100-ma= 7733
+Eps: 39 ,No. Moves: 500 ,Score: 7268 ,Max block: 512 ,100-ma= 7721
+Eps: 40 ,No. Moves: 621 ,Score: 10520 ,Max block: 1024 ,100-ma= 7791
+Eps: 41 ,No. Moves: 868 ,Score: 15152 ,Max block: 1024 ,100-ma= 7970
+Eps: 42 ,No. Moves: 480 ,Score: 7008 ,Max block: 512 ,100-ma= 7948
+Eps: 43 ,No. Moves: 477 ,Score: 6952 ,Max block: 512 ,100-ma= 7924
+Eps: 44 ,No. Moves: 447 ,Score: 6476 ,Max block: 512 ,100-ma= 7891
+Eps: 45 ,No. Moves: 489 ,Score: 7152 ,Max block: 512 ,100-ma= 7875
+Eps: 46 ,No. Moves: 383 ,Score: 5452 ,Max block: 512 ,100-ma= 7822
+Eps: 47 ,No. Moves: 896 ,Score: 15172 ,Max block: 1024 ,100-ma= 7979
+Eps: 48 ,No. Moves: 289 ,Score: 3556 ,Max block: 256 ,100-ma= 7887
+Eps: 49 ,No. Moves: 565 ,Score: 8424 ,Max block: 512 ,100-ma= 7897
+Eps: 50 ,No. Moves: 618 ,Score: 10508 ,Max block: 1024 ,100-ma= 7950
+Eps: 51 ,No. Moves: 509 ,Score: 7508 ,Max block: 512 ,100-ma= 7941
+Eps: 52 ,No. Moves: 246 ,Score: 3032 ,Max block: 256 ,100-ma= 7847
+new best game!
+512				4				16				2
+64				1024				128				4
+16				256				32				8
+2				4				8				4
+ score = 16152 odometer = 962
+game saved at best_game.npy
+Eps: 53 ,No. Moves: 962 ,Score: 16152 ,Max block: 1024 ,100-ma= 8003
+Eps: 54 ,No. Moves: 368 ,Score: 5364 ,Max block: 512 ,100-ma= 7954
+Eps: 55 ,No. Moves: 785 ,Score: 13732 ,Max block: 1024 ,100-ma= 8059
+Eps: 56 ,No. Moves: 278 ,Score: 3324 ,Max block: 256 ,100-ma= 7975
+Eps: 57 ,No. Moves: 444 ,Score: 6508 ,Max block: 512 ,100-ma= 7949
+Eps: 58 ,No. Moves: 602 ,Score: 10420 ,Max block: 1024 ,100-ma= 7992
+Eps: 59 ,No. Moves: 474 ,Score: 7036 ,Max block: 512 ,100-ma= 7976
+Eps: 60 ,No. Moves: 268 ,Score: 3216 ,Max block: 256 ,100-ma= 7896
+Eps: 61 ,No. Moves: 382 ,Score: 5448 ,Max block: 512 ,100-ma= 7856
+Eps: 62 ,No. Moves: 790 ,Score: 12976 ,Max block: 1024 ,100-ma= 7939
+Eps: 63 ,No. Moves: 515 ,Score: 7500 ,Max block: 512 ,100-ma= 7932
+Eps: 64 ,No. Moves: 726 ,Score: 12256 ,Max block: 1024 ,100-ma= 7999
+Eps: 65 ,No. Moves: 284 ,Score: 3348 ,Max block: 256 ,100-ma= 7928
+Eps: 66 ,No. Moves: 488 ,Score: 7104 ,Max block: 512 ,100-ma= 7915
+Eps: 67 ,No. Moves: 504 ,Score: 7324 ,Max block: 512 ,100-ma= 7906
+Eps: 68 ,No. Moves: 492 ,Score: 7232 ,Max block: 512 ,100-ma= 7896
+Eps: 69 ,No. Moves: 495 ,Score: 7288 ,Max block: 512 ,100-ma= 7888
+Eps: 70 ,No. Moves: 472 ,Score: 6956 ,Max block: 512 ,100-ma= 7874
+new best game!
+4				64				128				2
+16				256				512				1024
+8				32				128				32
+4				8				4				2
+ score = 16888 odometer = 1005
+game saved at best_game.npy
+Eps: 71 ,No. Moves: 1005 ,Score: 16888 ,Max block: 1024 ,100-ma= 8001
+Eps: 72 ,No. Moves: 877 ,Score: 14824 ,Max block: 1024 ,100-ma= 8096
+Eps: 73 ,No. Moves: 729 ,Score: 12256 ,Max block: 1024 ,100-ma= 8153
+Eps: 74 ,No. Moves: 503 ,Score: 7216 ,Max block: 512 ,100-ma= 8140
+Eps: 75 ,No. Moves: 257 ,Score: 3172 ,Max block: 256 ,100-ma= 8074
+Eps: 76 ,No. Moves: 422 ,Score: 6360 ,Max block: 512 ,100-ma= 8051
+Eps: 77 ,No. Moves: 479 ,Score: 7064 ,Max block: 512 ,100-ma= 8039
+Eps: 78 ,No. Moves: 399 ,Score: 5708 ,Max block: 512 ,100-ma= 8009
+Eps: 79 ,No. Moves: 754 ,Score: 12476 ,Max block: 1024 ,100-ma= 8065
+Eps: 80 ,No. Moves: 728 ,Score: 12340 ,Max block: 1024 ,100-ma= 8119
+Eps: 81 ,No. Moves: 304 ,Score: 4568 ,Max block: 512 ,100-ma= 8075
+Eps: 82 ,No. Moves: 682 ,Score: 11548 ,Max block: 1024 ,100-ma= 8117
+Eps: 83 ,No. Moves: 952 ,Score: 16112 ,Max block: 1024 ,100-ma= 8214
+Eps: 84 ,No. Moves: 511 ,Score: 7384 ,Max block: 512 ,100-ma= 8204
+new best game!
+2				8				512				4
+2048				32				8				2
+8				16				64				256
+4				8				4				2
+ score = 26380 odometer = 1347
+game saved at best_game.npy
+Eps: 85 ,No. Moves: 1347 ,Score: 26380 ,Max block: 2048 ,100-ma= 8417
+Eps: 86 ,No. Moves: 755 ,Score: 12576 ,Max block: 1024 ,100-ma= 8466
+Eps: 87 ,No. Moves: 497 ,Score: 7188 ,Max block: 512 ,100-ma= 8451
+Eps: 88 ,No. Moves: 454 ,Score: 6612 ,Max block: 512 ,100-ma= 8430
+Eps: 89 ,No. Moves: 778 ,Score: 12860 ,Max block: 1024 ,100-ma= 8480
+Eps: 90 ,No. Moves: 822 ,Score: 14340 ,Max block: 1024 ,100-ma= 8545
+Eps: 91 ,No. Moves: 733 ,Score: 12360 ,Max block: 1024 ,100-ma= 8587
+Eps: 92 ,No. Moves: 429 ,Score: 6400 ,Max block: 512 ,100-ma= 8563
+Eps: 93 ,No. Moves: 337 ,Score: 5068 ,Max block: 512 ,100-ma= 8526
+Eps: 94 ,No. Moves: 239 ,Score: 2948 ,Max block: 256 ,100-ma= 8466
+Eps: 95 ,No. Moves: 246 ,Score: 2976 ,Max block: 256 ,100-ma= 8409
+Eps: 96 ,No. Moves: 529 ,Score: 8012 ,Max block: 512 ,100-ma= 8404
+Eps: 97 ,No. Moves: 489 ,Score: 7092 ,Max block: 512 ,100-ma= 8391
+Eps: 98 ,No. Moves: 500 ,Score: 7264 ,Max block: 512 ,100-ma= 8379
+Eps: 99 ,No. Moves: 613 ,Score: 10468 ,Max block: 1024 ,100-ma= 8400
+/home/duken72/git/2048/game2048/r_learning.py:103: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  arr = np.array([self.weights, self.step, self.alpha, self.n])
+Eps: 100 ,No. Moves: 654 ,Score: 11296 ,Max block: 1024 ,100-ma= 8429
+agent saved in new_agent.npy
+Eps: 101 ,No. Moves: 916 ,Score: 15588 ,Max block: 1024 ,100-ma= 8532
+Eps: 102 ,No. Moves: 214 ,Score: 2700 ,Max block: 256 ,100-ma= 8503
+Eps: 103 ,No. Moves: 450 ,Score: 6696 ,Max block: 512 ,100-ma= 8506
+Eps: 104 ,No. Moves: 447 ,Score: 6544 ,Max block: 512 ,100-ma= 8451
+Eps: 105 ,No. Moves: 903 ,Score: 15468 ,Max block: 1024 ,100-ma= 8570
+Eps: 106 ,No. Moves: 376 ,Score: 5436 ,Max block: 512 ,100-ma= 8558
+Eps: 107 ,No. Moves: 921 ,Score: 15940 ,Max block: 1024 ,100-ma= 8684
+Eps: 108 ,No. Moves: 614 ,Score: 10452 ,Max block: 1024 ,100-ma= 8755
+Eps: 109 ,No. Moves: 940 ,Score: 15808 ,Max block: 1024 ,100-ma= 8858
+
+Eps: 110 ,No. Moves: 404 ,Score: 5808 ,Max block: 512 ,100-ma= 8784
+Eps: 111 ,No. Moves: 808 ,Score: 14064 ,Max block: 1024 ,100-ma= 8848
+Eps: 112 ,No. Moves: 471 ,Score: 6892 ,Max block: 512 ,100-ma= 8882
+Eps: 113 ,No. Moves: 731 ,Score: 12216 ,Max block: 1024 ,100-ma= 8974
+Eps: 114 ,No. Moves: 521 ,Score: 7604 ,Max block: 512 ,100-ma= 8995
+Eps: 115 ,No. Moves: 260 ,Score: 3164 ,Max block: 256 ,100-ma= 8923
+Eps: 116 ,No. Moves: 943 ,Score: 15964 ,Max block: 1024 ,100-ma= 9051
+Eps: 117 ,No. Moves: 730 ,Score: 12184 ,Max block: 1024 ,100-ma= 9108
+Eps: 118 ,No. Moves: 463 ,Score: 6860 ,Max block: 512 ,100-ma= 9142
+Eps: 119 ,No. Moves: 462 ,Score: 6724 ,Max block: 512 ,100-ma= 9178
+Eps: 120 ,No. Moves: 294 ,Score: 3640 ,Max block: 256 ,100-ma= 9093
+Eps: 121 ,No. Moves: 141 ,Score: 1360 ,Max block: 128 ,100-ma= 9009
+Eps: 122 ,No. Moves: 483 ,Score: 7016 ,Max block: 512 ,100-ma= 9005
+Eps: 123 ,No. Moves: 497 ,Score: 7192 ,Max block: 512 ,100-ma= 9005
+Eps: 124 ,No. Moves: 427 ,Score: 6388 ,Max block: 512 ,100-ma= 8948
+Eps: 125 ,No. Moves: 898 ,Score: 15444 ,Max block: 1024 ,100-ma= 8982
+Eps: 126 ,No. Moves: 969 ,Score: 16360 ,Max block: 1024 ,100-ma= 9020
+Eps: 127 ,No. Moves: 338 ,Score: 4988 ,Max block: 512 ,100-ma= 9000
+Eps: 128 ,No. Moves: 852 ,Score: 14496 ,Max block: 1024 ,100-ma= 9041
+Eps: 129 ,No. Moves: 767 ,Score: 13068 ,Max block: 1024 ,100-ma= 9010
+Eps: 130 ,No. Moves: 189 ,Score: 2296 ,Max block: 256 ,100-ma= 8969
+Eps: 131 ,No. Moves: 722 ,Score: 12116 ,Max block: 1024 ,100-ma= 8969
+Eps: 132 ,No. Moves: 455 ,Score: 6652 ,Max block: 512 ,100-ma= 8966
+Eps: 133 ,No. Moves: 325 ,Score: 4704 ,Max block: 512 ,100-ma= 8934
+Eps: 134 ,No. Moves: 268 ,Score: 3260 ,Max block: 256 ,100-ma= 8813
+Eps: 135 ,No. Moves: 197 ,Score: 2352 ,Max block: 256 ,100-ma= 8765
+Eps: 136 ,No. Moves: 154 ,Score: 1504 ,Max block: 128 ,100-ma= 8755
+Eps: 137 ,No. Moves: 211 ,Score: 2472 ,Max block: 256 ,100-ma= 8659
+Eps: 138 ,No. Moves: 266 ,Score: 3208 ,Max block: 256 ,100-ma= 8637
+Eps: 139 ,No. Moves: 383 ,Score: 5448 ,Max block: 512 ,100-ma= 8619
+Eps: 140 ,No. Moves: 492 ,Score: 7168 ,Max block: 512 ,100-ma= 8585
+Eps: 141 ,No. Moves: 491 ,Score: 7228 ,Max block: 512 ,100-ma= 8506
+Eps: 142 ,No. Moves: 513 ,Score: 7340 ,Max block: 512 ,100-ma= 8509
+Eps: 143 ,No. Moves: 482 ,Score: 7132 ,Max block: 512 ,100-ma= 8511
+Eps: 144 ,No. Moves: 451 ,Score: 6696 ,Max block: 512 ,100-ma= 8513
+Eps: 145 ,No. Moves: 708 ,Score: 11932 ,Max block: 1024 ,100-ma= 8561
+Eps: 146 ,No. Moves: 498 ,Score: 7192 ,Max block: 512 ,100-ma= 8579
+Eps: 147 ,No. Moves: 725 ,Score: 12152 ,Max block: 1024 ,100-ma= 8548
+Eps: 148 ,No. Moves: 379 ,Score: 5420 ,Max block: 512 ,100-ma= 8567
+Eps: 149 ,No. Moves: 794 ,Score: 13800 ,Max block: 1024 ,100-ma= 8621
+Eps: 150 ,No. Moves: 478 ,Score: 7072 ,Max block: 512 ,100-ma= 8586
+Eps: 151 ,No. Moves: 470 ,Score: 6900 ,Max block: 512 ,100-ma= 8580
+Eps: 152 ,No. Moves: 788 ,Score: 13848 ,Max block: 1024 ,100-ma= 8688
+Eps: 153 ,No. Moves: 484 ,Score: 7116 ,Max block: 512 ,100-ma= 8598
+Eps: 154 ,No. Moves: 312 ,Score: 4584 ,Max block: 512 ,100-ma= 8590
+Eps: 155 ,No. Moves: 387 ,Score: 5432 ,Max block: 512 ,100-ma= 8507
+Eps: 156 ,No. Moves: 261 ,Score: 3164 ,Max block: 256 ,100-ma= 8506
+Eps: 157 ,No. Moves: 512 ,Score: 7424 ,Max block: 512 ,100-ma= 8515
+Eps: 158 ,No. Moves: 416 ,Score: 5796 ,Max block: 512 ,100-ma= 8469
+Eps: 159 ,No. Moves: 363 ,Score: 4752 ,Max block: 256 ,100-ma= 8446
+Eps: 160 ,No. Moves: 246 ,Score: 3084 ,Max block: 256 ,100-ma= 8444
+Eps: 161 ,No. Moves: 390 ,Score: 5496 ,Max block: 512 ,100-ma= 8445
+Eps: 162 ,No. Moves: 119 ,Score: 1092 ,Max block: 128 ,100-ma= 8326
+Eps: 163 ,No. Moves: 284 ,Score: 3392 ,Max block: 256 ,100-ma= 8285
+Eps: 164 ,No. Moves: 258 ,Score: 3156 ,Max block: 256 ,100-ma= 8194
+Eps: 165 ,No. Moves: 259 ,Score: 3168 ,Max block: 256 ,100-ma= 8192
+Eps: 166 ,No. Moves: 684 ,Score: 11536 ,Max block: 1024 ,100-ma= 8237
+Eps: 167 ,No. Moves: 356 ,Score: 5208 ,Max block: 512 ,100-ma= 8215
+Eps: 168 ,No. Moves: 493 ,Score: 7152 ,Max block: 512 ,100-ma= 8215
+Eps: 169 ,No. Moves: 402 ,Score: 5544 ,Max block: 512 ,100-ma= 8197
+Eps: 170 ,No. Moves: 262 ,Score: 3172 ,Max block: 256 ,100-ma= 8159
+Eps: 171 ,No. Moves: 422 ,Score: 6320 ,Max block: 512 ,100-ma= 8054
+Eps: 172 ,No. Moves: 193 ,Score: 2352 ,Max block: 256 ,100-ma= 7929
+Eps: 173 ,No. Moves: 350 ,Score: 5124 ,Max block: 512 ,100-ma= 7858
+Eps: 174 ,No. Moves: 455 ,Score: 6636 ,Max block: 512 ,100-ma= 7852
+Eps: 175 ,No. Moves: 407 ,Score: 5820 ,Max block: 512 ,100-ma= 7878
+Eps: 176 ,No. Moves: 363 ,Score: 5284 ,Max block: 512 ,100-ma= 7868
+Eps: 177 ,No. Moves: 457 ,Score: 6828 ,Max block: 512 ,100-ma= 7865
+Eps: 178 ,No. Moves: 525 ,Score: 7540 ,Max block: 512 ,100-ma= 7883
+Eps: 179 ,No. Moves: 507 ,Score: 7232 ,Max block: 512 ,100-ma= 7831
+Eps: 180 ,No. Moves: 197 ,Score: 2348 ,Max block: 256 ,100-ma= 7731
+Eps: 181 ,No. Moves: 127 ,Score: 1212 ,Max block: 128 ,100-ma= 7698
+Eps: 182 ,No. Moves: 306 ,Score: 3796 ,Max block: 256 ,100-ma= 7620
+Eps: 183 ,No. Moves: 500 ,Score: 7188 ,Max block: 512 ,100-ma= 7531
+Eps: 184 ,No. Moves: 379 ,Score: 5436 ,Max block: 512 ,100-ma= 7511
+Eps: 185 ,No. Moves: 361 ,Score: 5308 ,Max block: 512 ,100-ma= 7301
+Eps: 186 ,No. Moves: 471 ,Score: 6896 ,Max block: 512 ,100-ma= 7244
+Eps: 187 ,No. Moves: 265 ,Score: 3184 ,Max block: 256 ,100-ma= 7204
+Eps: 188 ,No. Moves: 269 ,Score: 3196 ,Max block: 256 ,100-ma= 7170
+Eps: 189 ,No. Moves: 175 ,Score: 2100 ,Max block: 256 ,100-ma= 7062
+Eps: 190 ,No. Moves: 269 ,Score: 3248 ,Max block: 256 ,100-ma= 6951
+Eps: 191 ,No. Moves: 379 ,Score: 5436 ,Max block: 512 ,100-ma= 6882
+Eps: 192 ,No. Moves: 411 ,Score: 6240 ,Max block: 512 ,100-ma= 6880
+Eps: 193 ,No. Moves: 256 ,Score: 3088 ,Max block: 256 ,100-ma= 6860
+Eps: 194 ,No. Moves: 356 ,Score: 5116 ,Max block: 512 ,100-ma= 6882
+Eps: 195 ,No. Moves: 292 ,Score: 3476 ,Max block: 256 ,100-ma= 6887
+Eps: 196 ,No. Moves: 208 ,Score: 2456 ,Max block: 256 ,100-ma= 6832
+Eps: 197 ,No. Moves: 244 ,Score: 2920 ,Max block: 256 ,100-ma= 6790
+Eps: 198 ,No. Moves: 431 ,Score: 6360 ,Max block: 512 ,100-ma= 6781
+Eps: 199 ,No. Moves: 377 ,Score: 5428 ,Max block: 512 ,100-ma= 6730
+Eps: 200 ,No. Moves: 197 ,Score: 2376 ,Max block: 256 ,100-ma= 6641
+agent saved in new_agent.npy

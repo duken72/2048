@@ -1,0 +1,26 @@
+{
+    "os": "Linux-5.15.55-2-lts-x86_64-with-glibc2.35",
+    "python": "3.10.5",
+    "heartbeatAt": "2022-08-11T12:50:43.152581",
+    "startedAt": "2022-08-11T12:50:42.162902",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--features=2",
+        "--reward=basic",
+        "--tree-search=True"
+    ],
+    "state": "running",
+    "program": "/home/duken72/git/2048/game2048/r_learning.py",
+    "codePath": "game2048/r_learning.py",
+    "git": {
+        "remote": "https://github.com/abachurin/2048.git",
+        "commit": "cac617d591da85f44b3f54b32db04597cf6e047d"
+    },
+    "email": "duke7295@gmail.com",
+    "root": "/home/duken72/git/2048",
+    "host": "duken",
+    "username": "duken72",
+    "executable": "/usr/bin/python3"
+}

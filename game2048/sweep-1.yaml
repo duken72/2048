@@ -1,0 +1,10 @@
+program: r_learning.py
+method: grid
+parameters:
+  features:
+    values: [2, 3, 4]
+  reward:
+    values: ["basic", "log"]
+  tree-search:
+    value: True
+    # values: [True, False]
