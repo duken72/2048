@@ -1,8 +1,0 @@
-wandb_version: 1
-
-features:
-  value: 3
-reward:
-  value: log
-tree-search:
-  value: false

@@ -1,41 +1,17 @@
-# A Very Simple and Fast Reinforcement Learning Agent for the 2048 Game
+# A Hyperparameter search for RL Agent for the 2048 Game
 
-Q-learning (kind of) with linear operator applied to some simple designed one-hot features as a value function, and the usual game score as a reward.
-After three days of training on 1 CPU core of an old Mac-book pro the Agent reaches 2048 in 84% of games, 4096 in 47%, 8192 - sometimes. Average score is around 45,000.
+- This is a fork from [abachurin/2048](https://github.com/abachurin/2048).
+- Hyperparameter search with Weights and Biases: [wandb.ai/duken72/2048](https://wandb.ai/duken72/2048-game2048?workspace=user-duken72)
 
-First time i saw 2048 tile was after just 2 minutes of training and 200 epsiodes. Plays a game to 2048 in about 1 second. This is my first project in Machine Learning, which took about three months to complete and it feels like magic to me! :)
+-------
 
-### Why do it at all
-
-In the course of doing this project I've quickly found out that other people already had achieved much better scores results in the past, when the game was popular. See this discussion: <https://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048>
-
-But I used to enjoy the game and I wanted to:
-
-* Code the self-learning Agent myself.
-* Firstly, implement the game mechanics in Python, improving my rather basic Python sklills in the process.
-* Find a nice way to visualise it, study the basics of Numpy, Reinforcement Learning and Neural Networks (which i didn't need in the end for this particular project).
-* Find the right strategy with the following **important restrictions**:
-
-I wanted the code to run on my Mac-book, so no models with huge number of parameters.
-I did NOT want to wait for ages. Long training or more than 1 second per move - no go.
-
-No way i could train anything and get meaningful statistics otherwise.
-
-* Finally, learn how to post this project on github in a user-friendly way.
-
-#### When I've already finished this project
-
-I discovered that the solution method I've stumbled upon after a lot of wandering is called "N-tuples" and was employed before to this particular game, sure enough. See this excellent article: <https://arxiv.org/pdf/1604.05085.pdf>
-
-It's always nice to rediscover clever tricks yourself! I'm leaving my somewhat idiosyncatic terminology and the Conclusion as it was written, although i know now that it is incorrect: it does make a lot of sense to try longer tuples.
-
-### Requirements
+## Requirements
 
 Almost none. Apart from Python you only need to install `numpy` and `pygame` libraries. Both can be installed with `pip install`.
 
 Update: It seems that installing `pygame` is a bit of headache. The path, depending on the error messages one gets, is roughly this:
 
-```
+```bash
 pip3 install homebrew
 brew install gcc
 brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
@@ -56,8 +32,8 @@ Now you can run `python show.py` and it should fly. The colors and fonts are a b
 
 ### 2048 Game
 
-2048 is a single-player sliding block puzzle game designed by Italian web developer Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048. Of course, one can keep playing and achieve bigger tiles, with theoretical but probably unachiavable limit
-of 131072 (2 to the power of 17). When I used to play the game as a time-killer and stress-releiver some years ago, the best i've sometimes achieved was 8192 tile and my best score around 150,000.
+2048 is a single-player sliding block puzzle game designed by Italian web developer Gabriele Cirulli. The game's objective is to slide numbered tiles on a grid to combine them to create a tile with the number 2048. Of course, one can keep playing and achieve bigger tiles, with theoretical but probably unachievable limit
+of 131072 (2 to the power of 17). When I used to play the game as a time-killer and stress-releiver some years ago, the best i've sometimes achieved was 8192 tiles and my best score around 150,000.
 
 For those who never played it but are nevertheless interested, here is a brief description:
 2048 is played on a 4×4 grid, with tiles numbered by powers of 2: 2, 4, 8 etc. The board starts with two random 2 or 4 tiles. At each step the Player can try to shake the board in one of the four directions: left, up, right or down. Tiles slide as far as possible in the chosen direction until they are stopped by either another tile or the edge of the grid. If two tiles with the same number collide while moving, they merge into a tile with twice the value. This new number is added to the score. The resulting tile cannot merge with another tile again in the same move. If nothing on the board changed as a result of the Player's action, i.e. the move did not happen, the Player has to choose another move. If there are no valid moves - the game is over. Now, every turn after the Player's move, a new tile randomly appears in an empty spot on the board with a value of either 2 or 4, with 0.9 and 0.1 probabilities respectively.
